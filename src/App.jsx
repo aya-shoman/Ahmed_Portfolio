@@ -320,14 +320,14 @@ const experiences = [
       <div className="h-1.5 w-20 bg-primary mx-auto rounded-full"></div>
     </div>
 
-    {/* About Card - الرمادي الفاتح والـ Backdrop blur */}
+  
     <div className="grid grid-cols-1 lg:grid-cols-3 gap-12 items-center bg-zinc-700/40 backdrop-blur-xl p-10 rounded-3xl border border-white/20 shadow-2xl transition-all duration-300">
       
       <div className="lg:col-span-1 flex justify-center">
-        {/* ا) الصورة رجعت اهي، وبالإطار الـ Cyan اللي طلبقيه */}
+        
         <motion.div
-          initial={{ opacity: 0, x: -100, rotate: -5 }} // بتبدأ من الشمال وميالة شوية
-          whileInView={{ opacity: 1, x: 0, rotate: 0 }} // بترجع لمكانها وتتعدل
+          initial={{ opacity: 0, x: -100, rotate: -5 }} 
+          whileInView={{ opacity: 1, x: 0, rotate: 0 }} 
           transition={{ 
             duration: 0.8, 
             type: "spring", 
@@ -339,14 +339,14 @@ const experiences = [
           className="relative w-64 h-64 md:w-80 md:h-80 lg:w-full lg:h-[450px] rounded-2xl overflow-hidden border-2 border-primary shadow-lg shadow-primary/20"
         >
           <img 
-            src="/Ahmed.jpg" // تأكدي إن الصورة موجودة في فولدر public بهذا الاسم
+            src="/Ahmed.jpg" 
             alt="Ahmed Mohamed Profile Picture"
             className="w-full h-full object-cover transition-all duration-500 rounded-2xl"
           />
         </motion.div>
       </div>
 
-      {/* حركـة الكلام (اختياري) عشان يدخل من اليمين في نفس الوقت */}
+      
       <motion.div 
         initial={{ opacity: 0, x: 100 }}
         whileInView={{ opacity: 1, x: 0 }}
@@ -384,12 +384,12 @@ const experiences = [
 <section id="skills" className="relative py-20 px-4 sm:px-6 lg:px-8 bg-muted/30">
   <div className="container mx-auto max-w-6xl relative z-10">
 <div className="text-center mb-16">
-  {/* العنوان بنفس ستايل الأبوت بالظبط: أبيض مع لمسة سيان */}
+  
   <h2 className="text-4xl font-black mb-4 text-white tracking-tight">
     Technical <span className="text-primary">Skills</span>
   </h2>
   
-  {/* الخط اللي تحت العنوان: نفس عرض وسمك خط الأبوت */}
+ 
   <div className="h-1.5 w-20 bg-primary mx-auto rounded-full"></div>
 </div>
     
@@ -489,12 +489,12 @@ const experiences = [
       <section id="experience" className="relative py-20 px-4 sm:px-6 lg:px-8">
         <div className="container mx-auto max-w-6xl relative z-10">
          <div className="text-center mb-16">
-  {/* العنوان بنفس ستايل الأبوت بالظبط: أبيض مع لمسة سيان */}
+  
   <h2 className="text-4xl font-black mb-4 text-white tracking-tight">
      <span className="text-primary">Experience</span>
   </h2>
   
-  {/* الخط اللي تحت العنوان: نفس عرض وسمك خط الأبوت */}
+  
   <div className="h-1.5 w-20 bg-primary mx-auto rounded-full"></div>
 </div>
           
@@ -625,7 +625,7 @@ const experiences = [
 <section id="education" className="relative py-20 px-4 sm:px-6 lg:px-8 bg-background">
   <div className="container mx-auto max-w-6xl relative z-10">
     
-    {/* العنوان: مطابق تماماً للأقسام السابقة */}
+   
     <div className="text-center mb-16">
       <h2 className="text-4xl font-black mb-4 text-white tracking-tight">
         Edu<span className="text-primary">cation</span>
@@ -633,11 +633,11 @@ const experiences = [
       <div className="h-1.5 w-20 bg-primary mx-auto rounded-full"></div>
     </div>
     
-    {/* الكارت: بنفس ستايل الـ Projects (الرمادي الغامق والبوردر السيان) */}
+   
     <Card className="group border-2 border-primary/10 hover:border-primary transition-all duration-500 max-w-3xl mx-auto shadow-[0_0_20px_rgba(0,255,255,0.05)] hover:shadow-[0_0_30px_rgba(0,255,255,0.1)] backdrop-blur-sm bg-zinc-900/40 hover:-translate-y-2">
       <CardHeader>
         <div className="flex items-start gap-5">
-          {/* الأيقونة مع إضاءة خلفية خفيفة */}
+    
           <div className="p-4 bg-primary/10 rounded-2xl group-hover:bg-primary/20 transition-colors duration-300">
             <Award className="h-8 w-8 text-primary" />
           </div>
@@ -648,7 +648,7 @@ const experiences = [
             <CardDescription className="text-lg text-white/70">
               <span className="font-semibold text-primary/90">Zagazig University</span>
               <span className="mx-2 text-white/30">•</span>
-              Faculty of Engineering (ZagEng)
+              Faculty of Computer and Informatics
             </CardDescription>
           </div>
         </div>
