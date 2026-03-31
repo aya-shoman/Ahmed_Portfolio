@@ -334,8 +334,8 @@ const experiences = [
             bounce: 0.4 
           }}
           viewport={{ once: true }}
-          // ب) لون الإطار Cyan (border-primary) وزيادة السمك
-          // ج) إضافة إضاءة خفيفة (shadow-lg shadow-primary/20)
+        
+         
           className="relative w-64 h-64 md:w-80 md:h-80 lg:w-full lg:h-[450px] rounded-2xl overflow-hidden border-2 border-primary shadow-lg shadow-primary/20"
         >
           <img 
@@ -354,23 +354,23 @@ const experiences = [
         viewport={{ once: true }}
         className="lg:col-span-2 space-y-6"
       >
-        {/* أ) العنوان بقى "Backend .NET" بس فوق الكلام */}
+       
         <h3 className="text-3xl font-bold tracking-tight text-white mb-6">
           <span className="text-primary"> I am Backend .NET Developer</span>
         </h3>
         
-        {/* ب) الكلام المختصر جداً (سطرين ونص لكل فقرة) */}
-        {/* الفقرة الأولى: جودة الكود */}
+      
+       
         <p className="text-[18px] text-white/90 leading-[1.7] text-justify font-light">
           I build <span className="text-primary font-bold">Clean & Scalable APIs</span> on SOLID principles and Clean Architecture. My focus is on eliminating technical debt from day one, providing a stable foundation that ensures your system is easy to maintain and ready for future growth.
         </p>
 
-        {/* الفقرة الثانية: الأداء والأمان */}
+    
         <p className="text-[18px] text-white/90 leading-[1.7] text-justify font-light">
           My solutions prioritize <span className="text-primary font-bold">Speed and Security</span>. By optimizing SQL Server performance and implementing robust authentication with JWT and Identity, I ensure your application handles traffic with minimal latency while keeping data protected.
         </p>
 
-        {/* الفقرة الثالثة: القيمة للمشروع */}
+
         <p className="text-[18px] text-white/90 leading-[1.7] text-justify font-light">
           As a Technical Partner, I translate complex requirements into <span className="text-primary font-bold">Production-Ready Solutions</span>. I focus on high-availability and reliable system design, ensuring that your final product succeeds in challenging production environments and under heavy concurrent load.
         </p>
@@ -555,7 +555,7 @@ const experiences = [
                 </CardDescription>
               </div>
               
-              {/* التعديل هنا: استخدام asChild للينك الصغير */}
+            
               <Button
                 variant="ghost"
                 size="icon"
@@ -602,7 +602,7 @@ const experiences = [
               </div>
             </div>
 
-            {/* التعديل هنا: استخدام asChild للزرار الكبير */}
+          
             <Button
               variant="outline"
               asChild
@@ -648,7 +648,7 @@ const experiences = [
             <CardDescription className="text-lg text-white/70">
               <span className="font-semibold text-primary/90">Zagazig University</span>
               <span className="mx-2 text-white/30">•</span>
-              Faculty of Computer and Informatics
+              Faculty of Computers and Informartion
             </CardDescription>
           </div>
         </div>
@@ -736,7 +736,7 @@ const experiences = [
     asChild
     className="w-full group bg-primary text-primary-foreground hover:bg-primary/90 shadow-[0_0_20px_rgba(0,255,255,0.2)] transition-all duration-300 py-7 text-lg font-bold cursor-pointer"
   >
-    {/* غيرنا المسار لاسم ملفك اللي في الصورة بالضبط */}
+    
     <a href="/Ahmed_CVpdf" download="Ahmed_CV.pdf">
       <Download className="mr-2 h-6 w-6 group-hover:translate-y-1 transition-transform" />
       Download CV
@@ -763,8 +763,8 @@ const experiences = [
         </div>
       </footer>
 
-    </div> // قفلة الـ div الأساسي (أول واحد بعد الـ return)
+    </div> 
   );
-} // قفلة الـ function App
+} 
 export default App
 
