@@ -648,7 +648,7 @@ const experiences = [
             <CardDescription className="text-lg text-white/70">
               <span className="font-semibold text-primary/90">Zagazig University</span>
               <span className="mx-2 text-white/30">•</span>
-              Faculty of Computers and Informartion
+              Faculty of Computers And Information
             </CardDescription>
           </div>
         </div>
