@@ -310,21 +310,22 @@ const experiences = [
 </section>
 
 {/* About Section */}
-<section id="about" className="py-24 relative overflow-hidden bg-background">
+<section id="about" className="py-16 md:py-24 relative overflow-hidden bg-background">
   <div className="container mx-auto px-4 relative z-10">
     
-    <div className="text-center mb-16">
-      <h2 className="text-4xl font-black mb-4 text-white">
+    {/* Section Title */}
+    <div className="text-center mb-12 md:mb-16">
+      <h2 className="text-3xl md:text-4xl font-black mb-4 text-white">
         About <span className="text-primary">Me</span>
       </h2>
       <div className="h-1.5 w-20 bg-primary mx-auto rounded-full"></div>
     </div>
 
-  
-    <div className="grid grid-cols-1 lg:grid-cols-3 gap-12 items-center bg-zinc-700/40 backdrop-blur-xl p-10 rounded-3xl border border-white/20 shadow-2xl transition-all duration-300">
+    {/* Content Card */}
+    <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 lg:gap-12 items-center bg-zinc-700/40 backdrop-blur-xl p-6 md:p-10 rounded-3xl border border-white/20 shadow-2xl transition-all duration-300">
       
+      {/* Image Column */}
       <div className="lg:col-span-1 flex justify-center">
-        
         <motion.div
           initial={{ opacity: 0, x: -100, rotate: -5 }} 
           whileInView={{ opacity: 1, x: 0, rotate: 0 }} 
@@ -334,8 +335,6 @@ const experiences = [
             bounce: 0.4 
           }}
           viewport={{ once: true }}
-        
-         
           className="relative w-64 h-64 md:w-80 md:h-80 lg:w-full lg:h-[450px] rounded-2xl overflow-hidden border-2 border-primary shadow-lg shadow-primary/20"
         >
           <img 
@@ -346,32 +345,31 @@ const experiences = [
         </motion.div>
       </div>
 
-      
+      {/* Text Column */}
       <motion.div 
         initial={{ opacity: 0, x: 100 }}
         whileInView={{ opacity: 1, x: 0 }}
         transition={{ duration: 0.8, delay: 0.2 }}
         viewport={{ once: true }}
-        className="lg:col-span-2 space-y-6"
+        className="lg:col-span-2 space-y-6 text-left" // أضفنا text-left هنا كقاعدة عامة
       >
-       
-        <h3 className="text-3xl font-bold tracking-tight text-white mb-6">
+        
+        <h3 className="text-2xl md:text-3xl font-bold tracking-tight text-white mb-6">
           <span className="text-primary"> I am Backend .NET Developer</span>
         </h3>
         
-      
-       
-        <p className="text-[18px] text-white/90 leading-[1.7] text-justify font-light">
+        {/* Paragraph 1 - Removed text-justify */}
+        <p className="text-[16px] md:text-[18px] text-white/90 leading-[1.7] font-light">
           I build <span className="text-primary font-bold">Clean & Scalable APIs</span> on SOLID principles and Clean Architecture. My focus is on eliminating technical debt from day one, providing a stable foundation that ensures your system is easy to maintain and ready for future growth.
         </p>
 
-    
-        <p className="text-[18px] text-white/90 leading-[1.7] text-justify font-light">
+        {/* Paragraph 2 - Removed text-justify */}
+        <p className="text-[16px] md:text-[18px] text-white/90 leading-[1.7] font-light">
           My solutions prioritize <span className="text-primary font-bold">Speed and Security</span>. By optimizing SQL Server performance and implementing robust authentication with JWT and Identity, I ensure your application handles traffic with minimal latency while keeping data protected.
         </p>
 
-
-        <p className="text-[18px] text-white/90 leading-[1.7] text-justify font-light">
+        {/* Paragraph 3 - Removed text-justify */}
+        <p className="text-[16px] md:text-[18px] text-white/90 leading-[1.7] font-light">
           As a Technical Partner, I translate complex requirements into <span className="text-primary font-bold">Production-Ready Solutions</span>. I focus on high-availability and reliable system design, ensuring that your final product succeeds in challenging production environments and under heavy concurrent load.
         </p>
       </motion.div>
