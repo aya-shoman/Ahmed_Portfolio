@@ -377,21 +377,20 @@ const experiences = [
     </div>
   </div>
 </section>
-
 {/* Skills Section */}
-<section id="skills" className="relative py-20 px-4 sm:px-6 lg:px-8 bg-muted/30">
+<section id="skills" className="relative py-20 px-4 sm:px-6 lg:px-8 bg-muted/30 overflow-hidden">
   <div className="container mx-auto max-w-6xl relative z-10">
-<div className="text-center mb-16">
-  
-  <h2 className="text-4xl font-black mb-4 text-white tracking-tight">
-    Technical <span className="text-primary">Skills</span>
-  </h2>
-  
- 
-  <div className="h-1.5 w-20 bg-primary mx-auto rounded-full"></div>
-</div>
     
-    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8">
+    {/* Section Header */}
+    <div className="text-center mb-16">
+      <h2 className="text-4xl font-black mb-4 text-white tracking-tight">
+        Technical <span className="text-primary">Skills</span>
+      </h2>
+      <div className="h-1.5 w-20 bg-primary mx-auto rounded-full"></div>
+    </div>
+    
+    {/* Skills Grid */}
+    <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
       
       {/* 1. Languages Card */}
       <Card className="group hover:shadow-2xl transition-all duration-500 hover:border-primary/50 border-2 border-primary/20 hover:-translate-y-2 backdrop-blur-sm bg-card/50">
@@ -404,9 +403,13 @@ const experiences = [
           </div>
         </CardHeader>
         <CardContent>
-          <div className="flex flex-wrap gap-2">
+          <div className="flex flex-wrap gap-3 justify-start">
             {skills.languages.map((skill) => (
-              <Badge key={skill} variant="secondary" className="hover:bg-primary hover:text-primary-foreground transition-all duration-300 cursor-default text-sm py-1 px-3 hover:scale-110">
+              <Badge 
+                key={skill} 
+                variant="secondary" 
+                className="rounded-md px-4 py-2 min-w-[90px] justify-center bg-primary/5 text-white border border-primary/10 hover:bg-primary hover:text-white transition-all duration-300 cursor-default text-sm font-medium hover:scale-105 shadow-sm"
+              >
                 {skill}
               </Badge>
             ))}
@@ -425,9 +428,13 @@ const experiences = [
           </div>
         </CardHeader>
         <CardContent>
-          <div className="flex flex-wrap gap-2">
+          <div className="flex flex-wrap gap-3 justify-start">
             {skills.frameworks_libraries.map((skill) => (
-              <Badge key={skill} variant="secondary" className="hover:bg-primary hover:text-primary-foreground transition-all duration-300 cursor-default text-sm py-1 px-3 hover:scale-110">
+              <Badge 
+                key={skill} 
+                variant="secondary" 
+                className="rounded-md px-4 py-2 min-w-[90px] justify-center bg-primary/5 text-white border border-primary/10 hover:bg-primary hover:text-white transition-all duration-300 cursor-default text-sm font-medium hover:scale-105 shadow-sm"
+              >
                 {skill}
               </Badge>
             ))}
@@ -446,9 +453,13 @@ const experiences = [
           </div>
         </CardHeader>
         <CardContent>
-          <div className="flex flex-wrap gap-2">
+          <div className="flex flex-wrap gap-3 justify-start">
             {skills.concepts_architecture.map((skill) => (
-              <Badge key={skill} variant="secondary" className="hover:bg-primary hover:text-primary-foreground transition-all duration-300 cursor-default text-sm py-1 px-3 hover:scale-110">
+              <Badge 
+                key={skill} 
+                variant="secondary" 
+                className="rounded-md px-4 py-2 min-w-[90px] justify-center bg-primary/5 text-white border border-primary/10 hover:bg-primary hover:text-white transition-all duration-300 cursor-default text-sm font-medium hover:scale-105 shadow-sm"
+              >
                 {skill}
               </Badge>
             ))}
@@ -463,13 +474,17 @@ const experiences = [
             <div className="p-3 bg-gradient-to-br from-primary/20 to-primary/10 rounded-xl group-hover:from-primary/30 group-hover:to-primary/20 transition-all duration-300 group-hover:scale-110">
               <Database className="h-7 w-7 text-primary" />
             </div>
-            <CardTitle className="text-xl">Tools & Industrial Knowledge</CardTitle>
+            <CardTitle className="text-xl">Tools & Knowledge</CardTitle>
           </div>
         </CardHeader>
         <CardContent>
-          <div className="flex flex-wrap gap-2">
+          <div className="flex flex-wrap gap-3 justify-start">
             {skills.tools_others.map((skill) => (
-              <Badge key={skill} variant="secondary" className="hover:bg-primary hover:text-primary-foreground transition-all duration-300 cursor-default text-sm py-1 px-3 hover:scale-110">
+              <Badge 
+                key={skill} 
+                variant="secondary" 
+                className="rounded-md px-4 py-2 min-w-[90px] justify-center bg-primary/5 text-white border border-primary/10 hover:bg-primary hover:text-white transition-all duration-300 cursor-default text-sm font-medium hover:scale-105 shadow-sm"
+              >
                 {skill}
               </Badge>
             ))}
